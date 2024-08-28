@@ -9,13 +9,15 @@ import EditProfile from './UserScreens/EditProfile';
 import CurrentOrderScreen1 from './UserScreens/CurrentOrderScreen1';
 import BookAppointment from './UserScreens/BookAppointment';
 import PaymentSuccess from './UserScreens/PaymentSuccess';
+import Order1 from './UserScreens/Order1';
+import ProductDetailScreen1 from './UserScreens/ProductDetailScreen1';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Profile1' screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName='Order1' screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Landing" component={LandingScreen} />
         <Stack.Screen name="Profile1" component={UserProfile} />
@@ -23,6 +25,8 @@ export default function App() {
         <Stack.Screen name="CurrentO1" component={CurrentOrderScreen1} />
         <Stack.Screen name="BookAppointment" component={BookAppointment} />
         <Stack.Screen name="PaymentSuccess" component={PaymentSuccess} />
+        <Stack.Screen name="Order1" component={Order1} />
+        <Stack.Screen name="PDetails1" component={ProductDetailScreen1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
