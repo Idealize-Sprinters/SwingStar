@@ -11,13 +11,17 @@ import BookAppointment from './UserScreens/BookAppointment';
 import PaymentSuccess from './UserScreens/PaymentSuccess';
 import Order1 from './UserScreens/Order1';
 import ProductDetailScreen1 from './UserScreens/ProductDetailScreen1';
+import payment1 from './UserScreens/payment1';
+import msg from './TailorScreens/msg';
+import SeeappointmentsTailor1 from './TailorScreens/SeeappointmentsTailor1';
+import SeeappointmentsTailor2 from './TailorScreens/SeeappointmentsTailor2';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Order1' screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName='SeeappointmentsTailor2' screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Landing" component={LandingScreen} />
         <Stack.Screen name="Profile1" component={UserProfile} />
@@ -27,6 +31,10 @@ export default function App() {
         <Stack.Screen name="PaymentSuccess" component={PaymentSuccess} />
         <Stack.Screen name="Order1" component={Order1} />
         <Stack.Screen name="PDetails1" component={ProductDetailScreen1} />
+        <Stack.Screen name="payment1" component={payment1} />
+        <Stack.Screen name="msg" component={msg} />
+        <Stack.Screen name="SeeappointmentsTailor1" component={SeeappointmentsTailor1} />
+        <Stack.Screen name="SeeappointmentsTailor2" component={SeeappointmentsTailor2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
